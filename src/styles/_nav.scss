@@ -1,0 +1,36 @@
+nav {
+  min-height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  button {
+    padding: 0.5rem;
+    background-color: transparent;
+    border: 2px solid rgb(65, 65, 65);
+    transition: all 0.3s ease;
+    cursor: pointer;
+
+    &:hover {
+      background-color: rgb(65, 65, 65);
+      color: #fff;
+    }
+
+    span {
+      margin-right: 3px;
+    }
+  }
+
+  .library-active {
+    background: rgb(65, 65, 65);
+    color: white;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  nav {
+    button {
+      z-index: 10;
+    }
+  }
+}
